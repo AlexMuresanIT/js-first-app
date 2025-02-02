@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Page</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f0f8ff; color: #333; text-align: center; padding: 50px;">
+    <h1>Welcome to My Page</h1>
+    <p>This is a simple welcome page with a nicer look.</p>
+</body>
+<button onclick="getInfo()" style="margin: 10px; padding: 10px 20px; font-size: 16px;">Get Info</button>
+<button onclick="exitPage()" style="margin: 10px; padding: 10px 20px; font-size: 16px;">Exit</button>
+
+<script>
+    function getInfo() {
+        alert("Here is some information!");
+        window.open("https://www.pexels.com/search/cat/", "_blank");
+    }
+
+    function exitPage() {
+        window.close();
+    }
+</script>
+</html>
