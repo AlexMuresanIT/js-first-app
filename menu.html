@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #436277;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 400px;
+        }
+
+        h1 {
+            color: #52833f;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        button {
+            padding: 12px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .info-btn { background-color: #275777; color: white; }
+        .about-btn { background-color: #275777; color: white; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Welcome to My Page</h1>
+    <p>Explore and learn more about me!</p>
+
+    <div class="button-container">
+        <button class="info-btn" onclick="getPersonalSurprise()">Click for a personal surprise</button>
+        <button class="about-btn" onclick="personalDetails()">About Me</button>
+    </div>
+</div>
+
+<script>
+    function getPersonalSurprise() {
+        alert("Here is some information!");
+        window.open("https://www.pexels.com/search/cat/", "_blank");
+    }
+
+    function personalDetails() {
+        window.location.href = "personalDetailsWindow.html";
+    }
+</script>
+
+</body>
+</html>
