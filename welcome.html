@@ -10,12 +10,17 @@
     <p>This is a simple welcome page with a nicer look.</p>
 </body>
 <button onclick="getInfo()" style="margin: 10px; padding: 10px 20px; font-size: 16px;">Get Info</button>
+<button onclick="personalDetails()" style="margin: 10px; padding: 10px 20px; font-size: 16px;">About me</button>
 <button onclick="exitPage()" style="margin: 10px; padding: 10px 20px; font-size: 16px;">Exit</button>
 
 <script>
     function getInfo() {
         alert("Here is some information!");
         window.open("https://www.pexels.com/search/cat/", "_blank");
+    }
+
+    function personalDetails() {
+        window.location.href = "personalDetailsWindow.html";
     }
 
     function exitPage() {
